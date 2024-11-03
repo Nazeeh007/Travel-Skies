@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./travel_contactUs.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Travel Recommendations</h1>
+      <ul>
+        <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+        <li><a href="./travel_aboutUs.html" id="home">About Us </a></li>
+        <li><a href="./travel_contactUs.html" id="contact">Contact Us </a></li>
+      </ul>
+    </nav>
+
+    <section class="about-section">
+      <h1>Contact Us</h1>
+      <p>Feel free to contact us to know more about your Travels.</p>
+    </section>
+
+    <form id="contactForm">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" onclick="thankyou()">Submit</button>
+    </form>
+    <script>
+      function thankyou() {
+        alert("Thank you for contacting us!");
+      }
+    </script>
+  </body>
+</html>

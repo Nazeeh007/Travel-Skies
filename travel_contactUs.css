@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("./travel\ photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/*nav Style*/
+/* Navigation Bar Styles */
+nav {
+  background-color: rgba(30, 43, 46, 0.8);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.plane-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #7ed3e1;
+}
+
+/* Contact Form Styles */
+#contactForm {
+  max-width: 500px; /* Increase to match the width of the about section */
+  margin: 50px auto; /* Center the form with margin */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Match the about section background */
+  border: 2px solid white; /* Add border for consistency */
+  border-radius: 10px; /* Round corners */
+}
+
+/* Input and Textarea Styles */
+#contactForm input,
+#contactForm textarea {
+  width: 100%; /* Full width */
+  margin-bottom: 15px; /* Space between inputs */
+  padding: 10px; /* Add padding for comfort */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly transparent white background */
+  color: white; /* Text color */
+}
+
+/* Button Styles */
+#contactForm button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Round corners */
+  cursor: pointer; /* Pointer on hover */
+}
+
+#contactForm button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.about-section,
+.team-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.about-section h2,
+.team-section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #7ed3e1;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}

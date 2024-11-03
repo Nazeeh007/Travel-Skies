@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("./travel\ photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: rgba(30, 43, 46, 0.8);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.plane-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #7ed3e1;
+}
+
+/* About Us Section Styles */
+.about-section,
+.team-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+}
+
+.about-section h2,
+.team-section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #7ed3e1;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.team-section {
+  margin-top: 30px;
+}
+
+.team-member {
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-size: 24px;
+  color: #7ed3e1;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 18px;
+  color: #ccc;
+}

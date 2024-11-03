@@ -1,0 +1,221 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("./travel\ photo.jpg"); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: rgba(30, 43, 46, 0.8);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.plane-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav ul li:last-child {
+  margin-left: auto;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #7ed3e1;
+}
+
+.search-container {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  max-width: 600px; /* Set a maximum width for the search bar */
+  margin: 0 auto; /* Center container on the page */
+  background-color: white; /* Background color for the search bar */
+  border: 1px solid #ccc; /* Border for the search bar */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#conditionInput {
+  flex: 1; /* Allow input to grow and take available space */
+  padding: 10px; /* Padding inside input */
+  border: none; /* Remove default border */
+  border-radius: 5px 0 0 5px; /* Rounded corners for the left side */
+  outline: none; /* Remove outline on focus */
+}
+
+#btnSearch,
+#btnClear {
+  padding: 10px 15px; /* Padding for buttons */
+  border: none; /* Remove default border */
+  border-radius: 0 5px 5px 0; /* Rounded corners for the right side */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s;
+}
+
+#btnSearch:hover,
+#btnClear:hover {
+  background-color: #005a4f;
+}
+#btnSearch {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+}
+
+#btnClear {
+  background-color: #dc3545; /* Red background */
+  color: white; /* White text */
+}
+
+#btnClear:hover {
+  background-color: #005a4f;
+}
+
+/* Description Section Styles */
+.description {
+  max-width: 500px;
+  margin: 20px auto; /* Center and position under navbar */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid white; /* Border to match the example */
+  border-radius: 10px;
+}
+
+.description h1 {
+  font-size: 48px; /* Large font size for emphasis */
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.description h3 {
+  font-size: 18px; /* Smaller font size for the subtitle */
+  color: #ccc;
+}
+
+/* Booking Button Styles */
+.booking-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0 20px 20px; /* Move it to the left */
+  text-align: left;
+}
+
+.booking-button:hover {
+  background-color: #005a4f;
+}
+/* Social Media Icons Styles */
+.social-media-icons {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.social-media-icons a {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+  color: #00796b; /* Change color on hover */
+}
+/* General result item styling */
+
+/* Image styling */
+.result-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Name styling */
+.result-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* Location (Country and City) styling */
+.result-location {
+  font-size: 1.2em;
+  margin-top: 4px;
+}
+
+/* Description styling */
+.result-description {
+  font-size: 1em;
+  margin-top: 4px;
+}
+#searchResults {
+  display: none; /* Hide by default */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  color: white;
+  max-width: 800px; /* Adjust width if needed */
+  margin: 20px auto; /* Center and position under navbar */
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.result-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: left;
+}
